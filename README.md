@@ -27,3 +27,36 @@ This project implements a Transformer-based model to classify text as toxic or n
 - tqdm
 
 ---
+
+🔮 Making Predictions
+After training:
+
+Loads best_transformer_model.pth
+Processes test.tsv
+Saves predictions to predictions.tsv (column: predicted, 0 or 1)
+Note: Fix any RuntimeError by ensuring the saved model matches the architecture (e.g., embed_size=128).
+
+## 📈 Results
+
+The following table compares the performance of the Language aware Model and the Baseline Model across different languages and metrics.
+
+**Table 1: Comparison of Language aware Model and Baseline Model**
+
+| Language       | Metric    | Language aware Model | Baseline Model |
+|:---------------|:----------|---------------------:|---------------:|
+| Multilingual   | F1 Score  | 0.7041               | 0.6367         |
+| Multilingual   | Precision | 0.6783               | 0.6364         |
+| Multilingual   | Recall    | 0.7319               | 0.7830         |
+| Multilingual   | Accuracy  | 0.7331               | 0.6414         |
+| English (ENGL) | F1 Score  | 0.5985               | 0.8144         |
+| English (ENGL) | Precision | 0.9118               | 0.7399         |
+| English (ENGL) | Recall    | 0.8857               | 0.9057         |
+| English (ENGL) | Accuracy  | 0.9000               | 0.7937         |
+| Finnish (FINN) | F1 Score  | 0.6146               | 0.6914         |
+| Finnish (FINN) | Precision | 0.5544               | 0.8359         |
+| Finnish (FINN) | Recall    | 0.4799               | 0.5895         |
+| Finnish (FINN) | Accuracy  | 0.5070               | 0.5689         |
+| German (GERM)  | F1 Score  | 0.4212               | 0.3705         |
+| German (GERM)  | Precision | 0.3430               | 0.2736         |
+| German (GERM)  | Recall    | 0.5313               | 0.6105         |
+| German (GERM)  | Accuracy  | 0.6387               | 0.4987         |
