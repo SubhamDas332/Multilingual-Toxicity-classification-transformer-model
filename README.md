@@ -4,7 +4,7 @@ This project implements a Transformer-based model to classify text as toxic or n
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Custom BPE Tokenizer**: Preprocesses text efficiently
 - **Transformer Encoder**: Leverages multi-head self-attention
@@ -15,7 +15,7 @@ This project implements a Transformer-based model to classify text as toxic or n
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.6+
 - PyTorch 1.7+
@@ -28,7 +28,7 @@ This project implements a Transformer-based model to classify text as toxic or n
 
 ---
 
-🔮 Making Predictions
+Making Predictions
 After training:
 
 Loads best_transformer_model.pth
@@ -36,7 +36,7 @@ Processes test.tsv
 Saves predictions to predictions.tsv (column: predicted, 0 or 1)
 Note: Fix any RuntimeError by ensuring the saved model matches the architecture (e.g., embed_size=128).
 
-## 📈 Results
+## Results
 
 The following table compares the performance of the Language aware Model and the Baseline Model across different languages and metrics.
 
@@ -60,3 +60,4 @@ The following table compares the performance of the Language aware Model and the
 | German (GERM)  | Precision | 0.3430               | 0.2736         |
 | German (GERM)  | Recall    | 0.5313               | 0.6105         |
 | German (GERM)  | Accuracy  | 0.6387               | 0.4987         |
+
